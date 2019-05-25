@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        *{margin:0;padding: 0}
+
+        #engine{
+            width: 320px;
+            height: 568px;
+            background: url('./image/bg.png');
+            position: relative;
+            margin: 30px auto;
+            overflow: hidden;
+        }
+        #engine>#blood{
+            position: absolute;
+            right: 10px;
+            top:10px;
+        }
+        #engine>#score{
+            position: absolute;
+            left: 10px;
+            top:10px;
+            z-index: 10;
+        }
+
+        #engine>img{
+            position:absolute;
+            top:-999px;
+        }
+    </style>
+</head>
+<body>
+    <div id="engine">
+        <div id="blood">
+            <img src="./image/heart.png" >
+            <img src="./image/heart.png" >
+            <img src="./image/heart.png" >
+        </div>
+        <div id="score">得分:<span>0</span>分</div>
+    </div>
+</body>
+</html>
+<script src="./enemy.js"></script>
+<script src="./ememyAll.js"></script>
+<script src='./bullet.js'></script>
+<script src="./engine.js"></script>
+<script src="./hero.js"></script>
